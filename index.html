@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lumière Atelier is a luxury jewelry landing page with cinematic imagery, curated collections, and refined concierge details."
+    />
+    <title>Lumière Atelier | Fine Jewelry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              obsidian: '#070605',
+              noir: '#11100d',
+              champagne: '#d8a75e',
+              aureate: '#f1d193',
+              ivory: '#fbf7ef',
+              porcelain: '#fffdf8',
+              smoke: '#928a7e',
+            },
+            fontFamily: {
+              serif: ['Cormorant Garamond', 'serif'],
+              sans: ['Inter', 'sans-serif'],
+            },
+            boxShadow: {
+              luxe: '0 28px 80px rgba(9, 7, 4, 0.18)',
+              glow: '0 0 44px rgba(216, 167, 94, 0.34)',
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-ivory font-sans text-noir antialiased">
+    <div class="preloader fixed inset-0 z-[100] grid place-items-center bg-obsidian">
+      <div class="loader-mark" aria-label="Loading Lumière Atelier"></div>
+    </div>
+
+    <div class="cursor-glow pointer-events-none fixed left-0 top-0 z-[90] hidden h-40 w-40 rounded-full md:block"></div>
+
+    <header class="site-header fixed left-0 right-0 top-0 z-50 transition-all duration-500">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 md:px-8" aria-label="Primary navigation">
+        <a href="#home" class="group flex items-center gap-3" aria-label="Lumière Atelier home">
+          <span class="logo-gem grid h-11 w-11 place-items-center rounded-full border border-champagne/40 text-champagne">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M3 8h18M7 3h10l4 5-9 13L3 8l4-5Z" stroke="currentColor" stroke-width="1.4"/>
+              <path d="M8 8l4 13 4-13M7 3l1 5 4-5 4 5 1-5" stroke="currentColor" stroke-width="1.1"/>
+            </svg>
+          </span>
+          <span class="leading-none text-ivory">
+            <span class="block font-serif text-2xl tracking-[0.24em]">LUMIÈRE</span>
+            <span class="block text-[0.62rem] font-semibold tracking-[0.58em] text-champagne">ATELIER</span>
+          </span>
+        </a>
+
+        <div class="hidden items-center gap-10 text-xs font-semibold uppercase tracking-[0.24em] text-ivory/80 md:flex">
+          <a class="nav-link" href="#collection">Collection</a>
+          <a class="nav-link" href="#craft">Craft</a>
+          <a class="nav-link" href="#journal">Journal</a>
+          <a class="nav-link" href="#concierge">Concierge</a>
+        </div>
+
+        <div class="flex items-center gap-4 text-ivory">
+          <button class="bag-button magnetic grid h-11 w-11 place-items-center rounded-full border border-white/15 bg-white/5 transition hover:border-champagne/70 hover:text-champagne" aria-label="Open shopping bag">
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M6.5 8.5h11l.8 11H5.7l.8-11Z" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M9 8.5V7a3 3 0 0 1 6 0v1.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <button class="menu-button grid h-11 w-11 place-items-center rounded-full border border-white/15 bg-white/5 md:hidden" aria-label="Open menu" aria-expanded="false">
+            <span class="hamburger"></span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="mobile-menu pointer-events-none mx-5 -mt-2 rounded-3xl border border-white/10 bg-obsidian/90 p-6 text-ivory opacity-0 shadow-luxe backdrop-blur-2xl transition md:hidden">
+        <div class="grid gap-5 text-sm font-semibold uppercase tracking-[0.24em]">
+          <a href="#collection">Collection</a>
+          <a href="#craft">Craft</a>
+          <a href="#journal">Journal</a>
+          <a href="#concierge">Concierge</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero relative min-h-screen overflow-hidden bg-obsidian text-ivory">
+        <div class="hero-image absolute inset-0 scale-105 bg-cover bg-center"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_72%_42%,rgba(216,167,94,0.22),transparent_28%),linear-gradient(90deg,rgba(7,6,5,0.96)_0%,rgba(7,6,5,0.72)_38%,rgba(7,6,5,0.16)_100%)]"></div>
+        <div class="grain absolute inset-0 opacity-35"></div>
+        <div class="ambient ambient-one"></div>
+        <div class="ambient ambient-two"></div>
+
+        <div class="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center px-5 pb-20 pt-32 md:px-8">
+          <div class="max-w-3xl">
+            <p class="reveal-text mb-6 text-xs font-bold uppercase tracking-[0.5em] text-champagne md:text-sm">Timeless beauty, made to shine</p>
+            <h1 class="reveal-text font-serif text-6xl font-semibold leading-[0.88] tracking-[-0.045em] md:text-8xl lg:text-[9.5rem]">
+              Elegance in<br />Every Detail
+            </h1>
+            <p class="reveal-text mt-7 max-w-xl text-base leading-8 text-ivory/76 md:text-xl">
+              Discover heirloom diamonds, sculptural gold, and intimate brilliance crafted for life's most unforgettable entrances.
+            </p>
+            <div class="reveal-text mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
+              <a href="#collection" class="magnetic shimmer-button inline-flex items-center justify-center rounded-full px-8 py-4 text-sm font-bold uppercase tracking-[0.22em] text-obsidian shadow-glow">
+                Explore Collection
+              </a>
+              <a href="#craft" class="inline-flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.22em] text-ivory/85 transition hover:text-champagne">
+                Our Craft <span class="h-px w-12 bg-champagne"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="absolute bottom-8 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-3 text-[0.65rem] uppercase tracking-[0.35em] text-ivory/55 md:flex">
+          Scroll
+          <span class="scroll-line"></span>
+        </div>
+      </section>
+
+      <section id="collection" class="section-reveal relative overflow-hidden bg-porcelain px-5 py-24 md:px-8 md:py-32">
+        <div class="mx-auto max-w-7xl">
+          <div class="mx-auto mb-14 max-w-3xl text-center">
+            <p class="eyebrow">Our Collection</p>
+            <h2 class="mt-4 font-serif text-5xl font-semibold tracking-[-0.04em] md:text-7xl">Exquisite Pieces, Timeless Style</h2>
+          </div>
+
+          <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <article class="product-card group">
+              <div class="overflow-hidden rounded-t-[1.35rem] bg-ivory">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=85" alt="Solitaire diamond ring on ivory silk" class="product-image" />
+              </div>
+              <div class="p-7 text-center">
+                <h3 class="font-serif text-3xl leading-8">Solitaire<br />Diamond Ring</h3>
+                <p class="mt-4 text-lg font-bold text-champagne">$2,450</p>
+                <a href="#concierge" class="mt-6 inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.22em] text-noir/70 transition group-hover:text-champagne">View Details <span>→</span></a>
+              </div>
+            </article>
+            <article class="product-card group">
+              <div class="overflow-hidden rounded-t-[1.35rem] bg-ivory">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=900&q=85" alt="Gold pendant necklace with diamond" class="product-image" />
+              </div>
+              <div class="p-7 text-center">
+                <h3 class="font-serif text-3xl leading-8">Classic Diamond<br />Pendant</h3>
+                <p class="mt-4 text-lg font-bold text-champagne">$1,250</p>
+                <a href="#concierge" class="mt-6 inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.22em] text-noir/70 transition group-hover:text-champagne">View Details <span>→</span></a>
+              </div>
+            </article>
+            <article class="product-card group">
+              <div class="overflow-hidden rounded-t-[1.35rem] bg-ivory">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=900&q=85" alt="Gold diamond hoop earrings" class="product-image" />
+              </div>
+              <div class="p-7 text-center">
+                <h3 class="font-serif text-3xl leading-8">Diamond Hoop<br />Earrings</h3>
+                <p class="mt-4 text-lg font-bold text-champagne">$1,450</p>
+                <a href="#concierge" class="mt-6 inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.22em] text-noir/70 transition group-hover:text-champagne">View Details <span>→</span></a>
+              </div>
+            </article>
+            <article class="product-card group">
+              <div class="overflow-hidden rounded-t-[1.35rem] bg-ivory">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=900&q=85" alt="Gold tennis bracelet with diamonds" class="product-image" />
+              </div>
+              <div class="p-7 text-center">
+                <h3 class="font-serif text-3xl leading-8">Tennis<br />Bracelet</h3>
+                <p class="mt-4 text-lg font-bold text-champagne">$2,150</p>
+                <a href="#concierge" class="mt-6 inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.22em] text-noir/70 transition group-hover:text-champagne">View Details <span>→</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="craft" class="section-reveal bg-porcelain px-5 pb-24 md:px-8 md:pb-32">
+        <div class="mx-auto grid max-w-7xl gap-6 md:grid-cols-4">
+          <div class="feature-card">
+            <span class="feature-icon">◇</span>
+            <h3>Premium Quality</h3>
+            <p>Only the finest precious metals and ethically sourced diamonds.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">✧</span>
+            <h3>Handcrafted</h3>
+            <p>Each setting is finished by master artisans with obsessive detail.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">♢</span>
+            <h3>Lifetime Warranty</h3>
+            <p>Complimentary care, cleaning, and inspection for every heirloom.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">▣</span>
+            <h3>Elegant Packaging</h3>
+            <p>Wrapped in velvet, warm gold foiling, and a memorable reveal.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="journal" class="section-reveal relative overflow-hidden bg-ivory px-5 py-24 md:px-8 md:py-32">
+        <div class="newsletter-bg absolute inset-0"></div>
+        <div class="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-[0.95fr_1.05fr]">
+          <div class="relative z-10 rounded-[2rem] border border-white/60 bg-white/45 p-6 shadow-luxe backdrop-blur-xl md:p-10">
+            <p class="eyebrow text-left">Stay Connected</p>
+            <h2 class="mt-4 font-serif text-5xl font-semibold tracking-[-0.04em] md:text-7xl">Be the First to Shine</h2>
+            <p class="mt-5 max-w-lg text-lg leading-8 text-noir/62">Subscribe for private previews, atelier notes, and first access to limited diamond releases.</p>
+            <form class="mt-9 grid gap-4" aria-label="Newsletter signup">
+              <label class="sr-only" for="name">Your name</label>
+              <input id="name" type="text" placeholder="Your Name" autocomplete="name" />
+              <label class="sr-only" for="email">Your email</label>
+              <input id="email" type="email" placeholder="Your Email" autocomplete="email" />
+              <button class="magnetic shimmer-button rounded-full px-8 py-4 text-sm font-bold uppercase tracking-[0.22em] text-obsidian" type="submit">Subscribe</button>
+            </form>
+          </div>
+          <div class="relative z-10 min-h-[26rem] overflow-hidden rounded-[2.5rem] shadow-luxe">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?auto=format&fit=crop&w=1200&q=85" alt="Diamond ring floating over ivory fabric" class="floating-jewel h-full min-h-[26rem] w-full object-cover" />
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_44%_44%,transparent_0%,rgba(251,247,239,0.1)_38%,rgba(17,16,13,0.18)_100%)]"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="concierge" class="bg-obsidian px-5 py-14 text-ivory md:px-8">
+      <div class="mx-auto max-w-7xl">
+        <div class="flex flex-col gap-10 border-b border-white/10 pb-10 md:flex-row md:items-center md:justify-between">
+          <a href="#home" class="flex items-center gap-3">
+            <span class="text-3xl text-champagne">◇</span>
+            <span>
+              <span class="block font-serif text-3xl tracking-[0.24em]">LUMIÈRE</span>
+              <span class="block text-[0.62rem] font-semibold tracking-[0.58em] text-champagne">ATELIER</span>
+            </span>
+          </a>
+          <div class="flex flex-wrap gap-7 text-xs font-semibold uppercase tracking-[0.22em] text-ivory/62">
+            <a class="transition hover:text-champagne" href="#home">Home</a>
+            <a class="transition hover:text-champagne" href="#collection">Collection</a>
+            <a class="transition hover:text-champagne" href="#craft">About</a>
+            <a class="transition hover:text-champagne" href="mailto:concierge@lumiere.example">Contact</a>
+            <a class="transition hover:text-champagne" href="#">Policy</a>
+          </div>
+          <div class="flex gap-4 text-ivory/70">
+            <a class="social-link" href="#" aria-label="Instagram">◎</a>
+            <a class="social-link" href="#" aria-label="Facebook">f</a>
+            <a class="social-link" href="#" aria-label="Pinterest">p</a>
+          </div>
+        </div>
+        <p class="pt-8 text-center text-sm text-ivory/48">© 2026 Lumière Atelier. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
