@@ -1,0 +1,30 @@
+<svg width="900" height="520" viewBox="0 0 900 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Shiv Kripa Jewellers SKJ monogram</title>
+  <desc id="desc">The supplied SKJ gold monogram brand mark used for Shiv Kripa Jewellers.</desc>
+  <defs>
+    <linearGradient id="gold" x1="104" y1="42" x2="795" y2="477" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF5BF"/>
+      <stop offset="0.22" stop-color="#E8C46D"/>
+      <stop offset="0.48" stop-color="#A96F25"/>
+      <stop offset="0.72" stop-color="#F4D890"/>
+      <stop offset="1" stop-color="#8D5A1F"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="125" y1="59" x2="771" y2="458" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9D7"/>
+      <stop offset="0.5" stop-color="#C5903B"/>
+      <stop offset="1" stop-color="#5D3814"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="900" height="520" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="9" flood-color="#000000" flood-opacity="0.45"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#F0C96B" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <path d="M315 93C270 69 199 70 153 101C101 136 89 199 124 244C148 275 187 290 232 305C276 320 316 334 337 363C361 397 344 436 304 454C251 478 174 456 128 407L92 454C151 517 260 532 337 491C403 456 421 382 380 329C351 291 303 273 252 256C208 241 166 228 150 199C134 170 146 137 179 119C217 98 271 103 307 128L315 93Z" fill="url(#gold)" stroke="url(#edge)" stroke-width="9" stroke-linejoin="round"/>
+    <path d="M202 107C172 149 169 191 194 224C216 253 257 270 300 285C350 303 394 329 405 374" stroke="#FFF2B4" stroke-width="15" stroke-linecap="round" opacity="0.55"/>
+    <path d="M458 145V381L565 277L704 476H765L614 245L741 94H674L509 285V145H458Z" fill="url(#gold)" stroke="url(#edge)" stroke-width="9" stroke-linejoin="round"/>
+    <path d="M779 61C738 140 719 225 721 316C723 390 747 445 793 483C754 486 715 476 683 454C705 479 740 501 781 505C826 509 856 484 858 448C825 414 811 364 809 298C806 216 821 134 856 50L779 61Z" fill="url(#gold)" stroke="url(#edge)" stroke-width="9" stroke-linejoin="round"/>
+    <path d="M493 158V337" stroke="#FFF4B9" stroke-width="12" stroke-linecap="round" opacity="0.58"/>
+    <path d="M704 459L586 286" stroke="#FFF4B9" stroke-width="10" stroke-linecap="round" opacity="0.28"/>
+  </g>
+</svg>
